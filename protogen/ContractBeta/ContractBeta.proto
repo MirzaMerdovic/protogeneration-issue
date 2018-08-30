@@ -3,7 +3,7 @@
 package contracts.grpc.beta;
 option csharp_namespace = "Contracts.Grpc.Beta";
 
-import "contractalpha.proto"; // contractalpha.grpc.contract package
+import "ContractAlpha.proto"; // contractalpha.grpc.contract package
 
 service BetaService {
 	rpc GetLinkedAlpha (GetLinkedAlphaRequest) returns (GetLinkedAlphaResponse) {}

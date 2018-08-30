@@ -24,8 +24,8 @@ namespace Contracts.Grpc.Beta {
     static ContractBetaReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChJDb250cmFjdEJldGEucHJvdG8SE2NvbnRyYWN0cy5ncnBjLmJldGEaE2Nv",
-            "bnRyYWN0YWxwaGEucHJvdG8iIwoVR2V0TGlua2VkQWxwaGFSZXF1ZXN0EgoK",
+            "ChJDb250cmFjdEJldGEucHJvdG8SE2NvbnRyYWN0cy5ncnBjLmJldGEaE0Nv",
+            "bnRyYWN0QWxwaGEucHJvdG8iIwoVR2V0TGlua2VkQWxwaGFSZXF1ZXN0EgoK",
             "AmlkGAEgASgFIlAKFkdldExpbmtlZEFscGhhUmVzcG9uc2USNgoLTGlua2Vk",
             "QWxwaGEYASABKAsyIS5jb250cmFjdHMuZ3JwYy5hbHBoYS5BbHBoYU9iamVj",
             "dDJ6CgtCZXRhU2VydmljZRJrCg5HZXRMaW5rZWRBbHBoYRIqLmNvbnRyYWN0",
@@ -33,7 +33,7 @@ namespace Contracts.Grpc.Beta {
             "LmdycGMuYmV0YS5HZXRMaW5rZWRBbHBoYVJlc3BvbnNlIgBCFqoCE0NvbnRy",
             "YWN0cy5HcnBjLkJldGFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Contracts.Grpc.Alpha.ContractalphaReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Contracts.Grpc.Alpha.ContractAlphaReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.Grpc.Beta.GetLinkedAlphaRequest), global::Contracts.Grpc.Beta.GetLinkedAlphaRequest.Parser, new[]{ "Id" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Contracts.Grpc.Beta.GetLinkedAlphaResponse), global::Contracts.Grpc.Beta.GetLinkedAlphaResponse.Parser, new[]{ "LinkedAlpha" }, null, null, null)
