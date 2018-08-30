@@ -1,4 +1,4 @@
-# protogeneration-issue
+# Protobuffer Generation "Issue"
 
 When importing proto file you need to take care of file casing, e.g. if your proto file is named: "MyProto.proto" you cannot import it with
 import "myproto.proto" because you will end up with namespaces that are wrongly cased.
