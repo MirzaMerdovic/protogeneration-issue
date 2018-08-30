@@ -1,0 +1,24 @@
+﻿syntax = "proto3";
+
+package contracts.grpc.alpha;
+option csharp_namespace = "Contracts.Grpc.Alpha";
+
+import "google/protobuf/wrappers.proto"; // google.protobuf package
+
+service AlphaService {
+	rpc GetAlphaById(GetAlphaByIdRequest) returns (GetAlphaByIdResponse) {}
+}
+
+message GetAlphaByIdRequest {
+	int32 Id = 1;
+}
+
+message GetAlphaByIdResponse {
+	AlphaObject AlphaObject = 1;
+}
+
+message AlphaObject {
+	int32 Id = 1;
+	google.protobuf.StringValue Name = 2;
+	int32 Age = 3;
+}

@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+package contracts.grpc.beta;
+option csharp_namespace = "Contracts.Grpc.Beta";
+
+import "contractalpha.proto"; // contractalpha.grpc.contract package
+
+service BetaService {
+	rpc GetLinkedAlpha (GetLinkedAlphaRequest) returns (GetLinkedAlphaResponse) {}
+}
+
+message GetLinkedAlphaRequest {
+	int32 id = 1;
+}
+
+message GetLinkedAlphaResponse {
+	contracts.grpc.alpha.AlphaObject LinkedAlpha = 1;
+}
